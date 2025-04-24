@@ -1,8 +1,10 @@
 <template>
   <header class="h-[100px] flex items-center justify-center">
-    <ul class="flex items-center justify-between w-full max-w-7xl px-4">
+    <ul class="flex items-center justify-between w-full">
       <li>
-        <Typographie>ELIOTT CHIMINELLO</Typographie>
+        <NuxtLink to="/">
+          <Typographie>ELIOTT CHIMINELLO</Typographie>
+        </NuxtLink>
       </li>
       <li>
         <HeaderMenuDesktop />

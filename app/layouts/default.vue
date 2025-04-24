@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="dark:bg-[#141414] transition-all min-h-screen">
+  <div class="px-36 dark:bg-[#141414] transition-all min-h-screen">
     <CursorBG />
     <Header />
     <slot />
