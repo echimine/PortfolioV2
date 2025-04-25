@@ -4,17 +4,17 @@
     v-for="projet in projets"
     :key="projet.id"
   >
-    <article class="flex items-center gap-20 py-10">
+    <article class="flex items-center gap-10 lg:gap-20 py-10 flex-wrap">
       <div>
         <img
           :src="projet.image"
           :alt="`image de couverture du projet ${projet.title}`"
           :title="`image de couverture du projet ${projet.title}`"
-          class="max-w-md rounded-lg"
+          class="w-full lg:w-md rounded-lg"
         />
       </div>
-      <div class="flex flex-col justify-between gap-10">
-        <div>
+      <div class="flex flex-col justify-between gap-4 lg:gap-10">
+        <div class="flex items-center gap-4">
           <Typographie size="h3" weight="medium" as="h3">{{
             projet.title
           }}</Typographie>

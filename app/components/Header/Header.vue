@@ -8,8 +8,11 @@
           <Typographie>ELIOTT CHIMINELLO</Typographie>
         </NuxtLink>
       </li>
-      <li>
+      <li class="hidden md:block">
         <HeaderMenuDesktop />
+      </li>
+      <li class="block md:hidden">
+        <HeaderMenuMobile />
       </li>
     </ul>
   </header>

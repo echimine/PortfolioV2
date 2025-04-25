@@ -33,11 +33,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts',
-    '@nuxt/image',
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image'],
   googleFonts: {
     families: {
       Inter: true,
