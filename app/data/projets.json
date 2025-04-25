@@ -3,7 +3,8 @@
     {
       "id": 1,
       "title": "Holosphère",
-      "text": "Holosphere est un projet de fin d’année réalisé dans le cadre de ma première année en DN MADE, sur le <span>thème 'Souvenir'</span> . C’est une expérience interactive en 3D qui transforme une sphère en un véritable objet de mémoire. L’utilisateur peut y <span>projeter des photos</span> au centre de la boule et <span>choisir un thème</span> (comme l’été ou l’hiver) qui ajoute des <span>objets 3D</span> à l’intérieur de la sphère, créant ainsi une ambiance immersive et personnalisée pour revivre ses souvenirs autrement. Le projet a été développé avec <span>ReactJS, Three.js (drei) et Tailwind CSS</span>. C’était une première pour moi avec ces outils, un vrai challenge technique, mais aussi une super opportunité d’apprentissage. Nous étions <span>quatre dans l’équipe</span> : trois designers et moi en tant que développeur principal du projet.",
+      "date": "Avril/2025",
+      "text": "Nous avons conçu une expérience interactive et émotionnelle autour de Holosphere, un objet connecté qui projette des souvenirs en hologramme au cœur d’une sphère. L’objectif : permettre aux utilisateurs de revivre leurs moments les plus précieux comme s’ils y étaient, en alliant technologie, design et partage familial.",
       "description": "site E-commerce (en cours)",
       "image": "images/projets/holosphere/accueil_holosphere.png",
       "images": [
@@ -32,6 +33,17 @@
           "alt": "image du back-end du site rcphotos"
         }
       ],
+      "paragraphes": [
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "J’ai développé l’ensemble du site avec React, Three.js et Tailwind CSS. Le plus grand défi du projet a été la gestion de la 3D avec Three.js, notamment pour modéliser une sphère holographique interactive et intégrer un mini-jeu lié à l’univers du produit. Cette partie technique m’a vraiment poussé à monter en compétence sur les environnements 3D dans le navigateur."
+        },
+        {
+          "paragraphe": "Holosphere, c’est plus qu’un projet tech : c’est une réflexion sur la manière dont la technologie peut servir l’émotion et le partage familial."
+        }
+      ],
       "links": [
         {
           "linksite": "https://holosphere.vercel.app/",
@@ -42,30 +54,36 @@
           "linkname": "Github"
         }
       ],
-      "competences": [
+      "technologies": [
         {
-          "competence": "React"
+          "technologie": "React"
         },
         {
-          "competence": "Tailwind CSS"
+          "technologie": "Tailwind CSS"
         },
         {
-          "competence": "NextJS"
+          "technologie": "NextJS"
         },
         {
-          "competence": "ThreeJS / drei"
+          "technologie": "ThreeJS / drei"
         }
       ],
-      "divers": [
+      "competences": [
         {
-          "quand": "mars 2025",
-          "quoi": "Front-end"
+          "competence": "Travail d'équipe"
+        },
+        {
+          "competence": "Design système"
+        },
+        {
+          "competence": "Responsive"
         }
       ]
     },
     {
       "id": 2,
       "title": "RC photos",
+      "date": "Février/2025",
       "text": "J'ai développé un site vitrine pour exposer les photos de mon frère, photographe amateur. Pour structurer le projet, j’ai fait appel à mon père pour créer une <span>API</span>, que j’ai intégrée en <span>JavaScript</span> afin de récupérer et afficher les articles. Un des principaux défis techniques a été l’upload des images : j’ai dû les <span>convertir en base64</span>  avant de les envoyer à l’API. Celle-ci se charge ensuite de les transformer en JPG et de générer une miniature. Ce projet m’a permis d’apprendre à interagir avec une API, gérer les <span>requêtes</span> (ajouter, supprimer, modifier...)  en JavaScript. C'était une excellente opportunité pour mettre en pratique les notions de back-end et renforcer mes compétences en développement web (CSS, HTML).",
       "description": "Site vitrine de photographie",
       "image": "images/projets/rcphotos/projet-rcphotos.png",
@@ -87,33 +105,50 @@
           "alt": "image du back-end du site rcphotos"
         }
       ],
+      "paragraphes": [
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        }
+      ],
       "links": [
         {
           "linksite": "https://www.rcphotos.fr/",
           "linkname": "Visiter le site"
         }
       ],
-      "competences": [
+      "technologies": [
         {
-          "competence": "HTML"
+          "technologie": "HTML"
         },
         {
-          "competence": "CSS"
+          "technologie": "CSS"
         },
         {
-          "competence": "JAVASCRIPT"
+          "technologie": "JAVASCRIPT"
         }
       ],
-      "divers": [
+      "competences": [
         {
-          "quand": "decembre 2024",
-          "quoi": "Front-end / Back-end"
+          "competence": "Travail d'équipe"
+        },
+        {
+          "competence": "Design système"
+        },
+        {
+          "competence": "Responsive"
         }
       ]
     },
     {
       "id": 3,
       "title": "À TABLE !",
+      "date": "Décembre/2024",
       "text": "Dans le cadre de mon apprentissage de <span>Vue.js</span>, j’ai réalisé un projet de site de recettes nommé À Table !. Ce projet repose sur <span>l’API Spoonacular</span>, que j’ai intégrée au <span>store</span> pour centraliser la gestion des données. Les principales fonctionnalités sont <span>l'ajout aux favoris</span> avec la possibilité de sauvegarder des recettes pour un accès rapide. Puis une <span>liste de courses interactive</span> où les utilisateurs peuvent sélectionner des ingrédients directement depuis une recette pour générer une liste de courses. Affichage des <span>détails des recettes</span> . Le site est <span>responsive mobile-first</span> . Cette expérience m’a permis d’améliorer mes compétences en Vue.js avec l’Option API, avec un store personnalisé, utilisation du router, et en interaction avec une API externe.",
       "description": "Site internet de cuisine",
       "image": "images/projets/atable/a-table.png",
@@ -139,6 +174,17 @@
           "alt": "image du back-end du site rcphotos"
         }
       ],
+      "paragraphes": [
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        }
+      ],
       "links": [
         {
           "linksite": "https://www.echimine.fr/projets/a-table/",
@@ -149,30 +195,36 @@
           "linkname": "Github"
         }
       ],
-      "competences": [
+      "technologies": [
         {
-          "competence": "HTML"
+          "technologie": "HTML"
         },
         {
-          "competence": "CSS"
+          "technologie": "CSS"
         },
         {
-          "competence": "JAVASCRIPT"
+          "technologie": "JAVASCRIPT"
         },
         {
-          "competence": "VUE.JS"
+          "technologie": "VUE.JS"
         }
       ],
-      "divers": [
+      "competences": [
         {
-          "quand": "Février 2025",
-          "quoi": "Front-end"
+          "competence": "Travail d'équipe"
+        },
+        {
+          "competence": "Design système"
+        },
+        {
+          "competence": "Responsive"
         }
       ]
     },
     {
       "id": 4,
       "title": "IaSurvivor",
+      "date": "Novembre/2025",
       "text": "Dans le cadre d’un workshop de 5 jours en équipe, nous devions créer un événement “Bar à Jeux Numérique” avec plusieurs ateliers interactifs. Parmi les 7 jeux proposés, j’ai choisi IA Survivor, qui me semblait le plus intéressant à développer. Nous avons travaillé en équipe avec 3 développeurs et 2 designers. Le jeu consiste à proposer une solution face à un scénario donné, et une IA décide si l’on survit ou non en fonction de la réponse fournie. Ce projet a été mon tout premier. Nous avons utilisé <span>HTML, CSS et JavaScript</span> pour concevoir le jeu. JavaScript nous a servi pour le côté interactif et pour récupérer les scénarios grâce à l'utilisation du localStorage. J’ai particulièrement apprécié la <span>collaboration en équipe<span>, que ce soit avec les développeurs mais aussi avec les graphistes.",
       "description": "Jeu avec utilisation d'une IA",
       "image": "images/projets/workshop1/projet-worshop1.png",
@@ -198,33 +250,50 @@
           "alt": "image du back-end du site rcphotos"
         }
       ],
+      "paragraphes": [
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        }
+      ],
       "links": [
         {
           "linksite": "https://www.echimine.fr/projets/workshop1/",
           "linkname": "Visiter le site"
         }
       ],
-      "competences": [
+      "technologies": [
         {
-          "competence": "HTML"
+          "technologie": "HTML"
         },
         {
-          "competence": "CSS"
+          "technologie": "CSS"
         },
         {
-          "competence": "JAVASCRIPT"
+          "technologie": "JAVASCRIPT"
         }
       ],
-      "divers": [
+      "competences": [
         {
-          "quand": "Novembre 2024",
-          "quoi": "Front-end"
+          "competence": "Travail d'équipe"
+        },
+        {
+          "competence": "Design système"
+        },
+        {
+          "competence": "Responsive"
         }
       ]
     },
     {
       "id": 5,
       "title": "Duel dans la Force",
+      "date": "Décembre/2025",
       "text": "Le projet 'Duel dans la Force' est <span> un jeu de frappe en JavaScript </span> où deux joueurs s'affrontent dans l'univers de Star Wars. Le but du jeu est simple : chaque joueur doit frapper au bon moment pour allumer son sabre laser, et le premier à réussir cela remporte la partie. En tant que passionné de Star Wars, j'ai choisi de faire le thème de Stawars. Techniquement, j'ai utilisé la <span> gestion des événements </span> avec les <i>KeyUp</i> et aussi la couleur du sabre laser change en fonction du score. Ce projet a permis de perfectionner mes compétences en JavaScript, tout en étant une bonne occasion d'appliquer des concepts appris en cours.",
       "description": "Jeu de frappe",
       "image": "images/projets/sw/projet-jeux-de-frappe.png",
@@ -232,6 +301,17 @@
         {
           "image": "images/projets/sw/projet-jeux-de-frappe.png",
           "alt": "image du jeu Duel dans la force"
+        }
+      ],
+      "paragraphes": [
+        {
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+        },
+        {
+          "paragraphe": "J’ai développé l’ensemble du site avec React, Three.js et Tailwind CSS. Le plus grand défi du projet a été la gestion de la 3D avec Three.js, notamment pour modéliser une sphère holographique interactive et intégrer un mini-jeu lié à l’univers du produit. Cette partie technique m’a vraiment poussé à monter en compétence sur les environnements 3D dans le navigateur."
+        },
+        {
+          "paragraphe": "Holosphere, c’est plus qu’un projet tech : c’est une réflexion sur la manière dont la technologie peut servir l’émotion et le partage familial."
         }
       ],
       "links": [
@@ -244,21 +324,26 @@
           "linkname": "Github"
         }
       ],
-      "competences": [
+      "technologies": [
         {
-          "competence": "HTML"
+          "technologie": "HTML"
         },
         {
-          "competence": "CSS"
+          "technologie": "CSS"
         },
         {
-          "competence": "JAVASCRIPT"
+          "technologie": "JAVASCRIPT"
         }
       ],
-      "divers": [
+      "competences": [
         {
-          "quand": "Novembre 2024",
-          "quoi": "Front-end"
+          "competence": "Travail d'équipe"
+        },
+        {
+          "competence": "Design système"
+        },
+        {
+          "competence": "Responsive"
         }
       ]
     }

@@ -48,10 +48,10 @@ onBeforeUnmount(() => {
 
 //variant c'est la taille du text selon le tag
 const sizeClasses: Record<Size, string> = {
-  h1: 'text-[clamp(64px,5vw,96px)]',
-  h2: 'text-2xl',
-  h3: 'text-xl',
-  h4: 'text-lg',
+  h1: 'text-[64px] lg:text-[96px]',
+  h2: '',
+  h3: 'text-[clamp(20px,8vw,32px)]',
+  h4: 'text-2xl',
   bodyxl: 'text-xl',
   bodybase: 'text-base',
 };
