@@ -75,14 +75,14 @@
       <Typographie>{{ paragraphe.paragraphe }}</Typographie>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
       <NuxtImg
         v-for="image in projet.images"
         :key="image.image"
         :src="image.image"
         :alt="image.alt"
         :title="image.alt"
-        class="rounded-2xl object-cover w-full h-auto"
+        class="rounded-lg md:rounded-2xl object-cover w-full h-auto"
       />
     </div>
   </section>
@@ -136,7 +136,7 @@ interface Projet {
   competences: ProjetCompetence[];
 }
 const isLoading = ref(true);
-// Variables réactives
+
 const route = useRoute();
 const projetId = ref(route.params.id);
 
@@ -163,14 +163,14 @@ onMounted(async () => {
       console.error('Erreur inconnue');
     }
   } finally {
-    // Petit délai pour simuler le "chargement"
+    //delay pour simuler le chargement
     setTimeout(() => {
       isLoading.value = false;
-    }, 3000); // 3 secondes
+    }, 2000);
   }
 });
 
-// Computed pour trouver le bon projet
+// pour trouver le projet avec l'id
 const projet = computed(() => {
   return projets.value.find((p) => String(p.id) === String(projetId.value));
 });
@@ -180,7 +180,7 @@ watch(
   async (newId) => {
     projetId.value = newId; // Mise à jour de l'ID
     isLoading.value = true; // On redémarre le chargement
-    await new Promise((resolve) => setTimeout(resolve, 3000)); // Simule le chargement 3 sec
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simule le chargement 3 sec
     isLoading.value = false;
   }
 );
