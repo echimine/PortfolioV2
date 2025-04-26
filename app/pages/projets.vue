@@ -5,7 +5,9 @@
       Découvrez mes projets
     </Typographie>
     <Separator />
-    <CardsCardProjets />
+    <client-only>
+      <CardsCardProjets />
+    </client-only>
   </main>
 </template>
 
