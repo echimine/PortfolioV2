@@ -21,34 +21,34 @@
     </button>
 
     <!-- Menu déroulant DANS SON WRAPPER -->
-    <transition name="fade">
-      <div
-        v-if="isOpen"
-        ref="menuRef"
-        class="absolute right-0 top-12 w-56 bg-white dark:bg-black shadow-lg rounded-xl p-4 flex flex-col gap-4 z-20"
-      >
-        <NuxtLink
-          @click="closeMenu"
-          to="/projets"
-          :class="getLinkClass('/projets')"
-          >Projets</NuxtLink
-        >
-        <NuxtLink
-          @click="closeMenu"
-          to="/a-propos"
-          :class="getLinkClass('/a-propos')"
-          >À propos</NuxtLink
-        >
-        <NuxtLink
-          @click="closeMenu"
-          to="/contact"
-          :class="getLinkClass('/contact')"
-          >Contact</NuxtLink
-        >
-        <SwitchColor />
-      </div>
-    </transition>
   </div>
+  <transition name="fade">
+    <div
+      v-if="isOpen"
+      ref="menuRef"
+      class="absolute right-0 top-8 w-56 bg-white dark:bg-black shadow-lg rounded-xl p-4 flex flex-col gap-4 z-20"
+    >
+      <NuxtLink
+        @click="closeMenu"
+        to="/projets"
+        :class="getLinkClass('/projets')"
+        >Projets</NuxtLink
+      >
+      <NuxtLink
+        @click="closeMenu"
+        to="/a-propos"
+        :class="getLinkClass('/a-propos')"
+        >À propos</NuxtLink
+      >
+      <NuxtLink
+        @click="closeMenu"
+        to="/contact"
+        :class="getLinkClass('/contact')"
+        >Contact</NuxtLink
+      >
+      <SwitchColor />
+    </div>
+  </transition>
 </template>
 
 <script setup lang="ts">
