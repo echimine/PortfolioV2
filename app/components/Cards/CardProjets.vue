@@ -13,7 +13,7 @@
       />
 
       <div
-        class="flex md:flex-col items-center md:items-start justify-between gap-4 lg:gap-10 w-full"
+        class="flex flex-wrap md:flex-col items-center md:items-start justify-between gap-4 lg:gap-10 w-full"
       >
         <div class="flex flex-col gap-4">
           <Typographie size="h3" weight="medium" as="h3">{{
