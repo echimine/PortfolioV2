@@ -3,7 +3,10 @@
     <!-- Bouton hamburger EN DEHORS de menuRef -->
     <button
       @click="toggleMenu"
-      class="p-2 focus:outline-none z-30 relative"
+      :class="[
+        `p-2 focus:outline-none z-30 relative`,
+        isOpen ? 'bg-blue dark:bg-orange rounded-lg' : '',
+      ]"
       ref="buttonRef"
     >
       <span
@@ -64,6 +67,8 @@ const buttonRef = ref<HTMLElement | null>(null);
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
+  if (isOpen.value) {
+  }
 };
 
 const closeMenu = () => {
