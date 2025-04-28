@@ -35,10 +35,10 @@
       ],
       "paragraphes": [
         {
-          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet physique. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
         },
         {
-          "paragraphe": "J’ai développé l’ensemble du site avec React, Three.js et Tailwind CSS. Le plus grand défi du projet a été la gestion de la 3D avec Three.js, notamment pour modéliser une sphère holographique interactive et intégrer un mini-jeu lié à l’univers du produit. Cette partie technique m’a vraiment poussé à monter en compétence sur les environnements 3D dans le navigateur."
+          "paragraphe": "J’ai développé l’ensemble du site avec React, Three.js et Tailwind CSS. Le plus grand défi du projet a été la gestion de la 3D avec Three.js, notamment pour modéliser une sphère holographique interactive et intégrer des objets 3d à l'intérieur du produit. Cette partie technique m’a vraiment poussé à monter en compétence."
         },
         {
           "paragraphe": "Holosphere, c’est plus qu’un projet tech : c’est une réflexion sur la manière dont la technologie peut servir l’émotion et le partage familial."
@@ -84,7 +84,7 @@
       "id": 2,
       "title": "RC photos",
       "date": "Février/2025",
-      "text": "J'ai développé un site vitrine pour exposer les photos de mon frère, photographe amateur. Pour structurer le projet, j’ai fait appel à mon père pour créer une <span>API</span>, que j’ai intégrée en <span>JavaScript</span> afin de récupérer et afficher les articles. Un des principaux défis techniques a été l’upload des images : j’ai dû les <span>convertir en base64</span>  avant de les envoyer à l’API. Celle-ci se charge ensuite de les transformer en JPG et de générer une miniature. Ce projet m’a permis d’apprendre à interagir avec une API, gérer les <span>requêtes</span> (ajouter, supprimer, modifier...)  en JavaScript. C'était une excellente opportunité pour mettre en pratique les notions de back-end et renforcer mes compétences en développement web (CSS, HTML).",
+      "text": "J'ai imaginé un site vitrine interactif pour exposer les photos de mon frère, photographe amateur. Afin de structurer le projet, mon père a développé une API sur mesure, que j'ai intégrée en JavaScript. J'ai appris à gérer l'upload d’images en base64 et à manipuler les requêtes pour créer une expérience fluide, tout en renforçant mes compétences en front-end et back-end.",
       "description": "Site vitrine de photographie",
       "image": "images/projets/rcphotos/projet-rcphotos.png",
       "images": [
@@ -107,13 +107,13 @@
       ],
       "paragraphes": [
         {
-          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+          "paragraphe": "RCPhotos est un site vitrine dédié aux photographies de mon frère. L'objectif était de créer une plateforme simple et esthétique pour exposer ses images de manière fluide et accessible, offrant une expérience visuelle agréable à tous."
         },
         {
-          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+          "paragraphe": "J'ai développé une API avec mon père pour gérer les photos (ajout, modification, suppression) et intégré cette API en JavaScript. L’upload d’images en base64, leur conversion en JPG et la création de miniatures ont été automatisés, améliorant l'expérience utilisateur."
         },
         {
-          "paragraphe": "Holosphere est un projet de fin d’année réalisé en équipe avec trois designers. Le thème imposé était 'le souvenir', avec pour objectif de concevoir un site e-commerce autour d’un objet connecté. Nous avons imaginé Holosphere : une sphère capable de projeter des souvenirs en hologramme, offrant une expérience à la fois interactive, émotionnelle et familiale."
+          "paragraphe": "Ce projet m'a permis de renforcer mes compétences en gestion de contenu et d'approfondir mes connaissances sur les API et leur utilisation en javascript, en combinant la photographie avec une interface moderne et intuitive."
         }
       ],
       "links": [
@@ -135,13 +135,13 @@
       ],
       "competences": [
         {
-          "competence": "Travail d'équipe"
+          "competence": "Front-end & back-end"
         },
         {
-          "competence": "Design système"
+          "competence": "API REST"
         },
         {
-          "competence": "Responsive"
+          "competence": "Contenu dynamiques"
         }
       ]
     },
