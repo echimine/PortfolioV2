@@ -1,37 +1,49 @@
 <template>
-  <section v-if="projets && projets.length > 0">
-    <article
-      v-for="projet in projets"
-      :key="projet.id"
-      class="flex items-center gap-10 py-10 flex-wrap md:flex-nowrap"
-    >
-      <img
-        :src="projet.image"
-        :alt="`image de couverture du projet ${projet.title}`"
-        :title="`image de couverture du projet ${projet.title}`"
-        class="w-full md:w-96 rounded-lg"
-      />
-
-      <div
-        class="flex flex-wrap md:flex-col items-center md:items-start justify-between gap-4 lg:gap-10 w-full"
+  <section
+    v-if="projets && projets.length > 0"
+    class="flex justify-center md:justify-start"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-14 pt-10">
+      <article
+        v-for="(projet, index) in projets"
+        :key="projet.id"
+        class="relative flex flex-col lg:max-w-[800px] lg:max-h-[530px] items-center gap-10 pt-10 flex-wrap"
       >
-        <div class="flex flex-col gap-4">
-          <Typographie size="h3" weight="medium" as="h3">{{
-            projet.title
-          }}</Typographie>
-          <Typographie size="bodybase">{{ projet.description }}</Typographie>
+        <!-- Séparateur vertical (droite), uniquement pour colonne 1 et 2 -->
+        <div
+          v-if="index % 3 !== 2"
+          class="absolute top-0 right-[-28px] h-full w-[1px] bg-black dark:bg-white"
+        ></div>
+
+        <img
+          :src="projet.image"
+          :alt="`image de couverture du projet ${projet.title}`"
+          :title="`image de couverture du projet ${projet.title}`"
+          class="w-full rounded-lg"
+        />
+
+        <div
+          class="flex flex-wrap items-center justify-between gap-4 lg:gap-10 px-4 w-full"
+        >
+          <div class="flex flex-col gap-4">
+            <Typographie size="h3" weight="medium" as="h3">{{
+              projet.title
+            }}</Typographie>
+            <Typographie size="bodybase">{{ projet.description }}</Typographie>
+          </div>
+
+          <div>
+            <NuxtLink :to="`/projet/${projet.id}`">
+              <ButtonsCTAButtons type="button"
+                >Voir le projet</ButtonsCTAButtons
+              >
+            </NuxtLink>
+          </div>
         </div>
 
-        <div>
-          <NuxtLink :to="`/projet/${projet.id}`">
-            <ButtonsCTAButtons type="button">
-              Voir le projet
-            </ButtonsCTAButtons>
-          </NuxtLink>
-        </div>
-      </div>
-    </article>
-    <Separator />
+        <div class="h-[1px] bg-black dark:bg-white w-full"></div>
+      </article>
+    </div>
   </section>
 
   <p v-else class="flex justify-center items-center min-h-screen">

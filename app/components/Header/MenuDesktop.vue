@@ -1,15 +1,15 @@
 <template>
   <div class="flex gap-6">
     <NuxtLink to="/projets" :class="getLinkClass('/projets')">
-      Projets
+      <Typographie size="bodyxl">Projets</Typographie>
     </NuxtLink>
 
     <NuxtLink to="/a-propos" :class="getLinkClass('/a-propos')">
-      A propos
+      <Typographie size="bodyxl"> A propos</Typographie>
     </NuxtLink>
 
     <NuxtLink to="/contact" :class="getLinkClass('/contact')">
-      Contact
+      <Typographie size="bodyxl">Contact</Typographie>
     </NuxtLink>
 
     <SwitchColor />

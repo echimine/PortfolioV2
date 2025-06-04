@@ -5,5 +5,6 @@
     <!-- <CursorBG /> -->
     <Header />
     <slot />
+    <Footer />
   </div>
 </template>

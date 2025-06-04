@@ -1,7 +1,7 @@
 <template>
   <main>
-    <Typographie size="h1" as="h1">Projets</Typographie>
-    <Typographie size="bodybase" as="p" class="mb-4">
+    <Typographie size="h1" as="h1">MES PROJETS</Typographie>
+    <Typographie size="bodyxl" as="h2" class="mb-4">
       Découvrez mes projets
     </Typographie>
     <Separator />

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 
-type Size = 'h1' | 'h2' | 'h3' | 'h4' | 'bodyxl' | 'bodybase';
+type Size = 'h1' | 'h2' | 'h3' | 'h4' | 'bodyxl' | 'bodybase' | 'footer';
 type Font = 'inter';
 type Weight = 'regular' | 'medium' | 'bold';
 type Tag = 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span';
@@ -48,12 +48,13 @@ onBeforeUnmount(() => {
 
 //variant c'est la taille du text selon le tag
 const sizeClasses: Record<Size, string> = {
-  h1: 'text-[42px] md:text-[96px]',
-  h2: '',
-  h3: 'text-[clamp(20px,8vw,32px)]',
-  h4: 'text-2xl',
-  bodyxl: 'text-xl',
-  bodybase: 'text-base',
+  h1: 'text-[clamp(2.625rem,10vw,6rem)]', // ~42px à 96px
+  h2: 'text-[clamp(2rem,6vw,3.125rem)]', // ~32px à 50px
+  h3: 'text-[clamp(1.25rem,4vw,2rem)]', // ~20px à 32px
+  h4: 'text-[clamp(1.125rem,2.5vw,1.5rem)]', // ~18px à 24px
+  bodyxl: 'text-[clamp(1rem,2.5vw,1.25rem)]', // ~16px à 20px
+  bodybase: 'text-[clamp(0.875rem,2vw,1rem)]', // ~14px à 16px
+  footer: 'text-[clamp(2.625rem,10vw,6rem)]', // même que h1
 };
 
 // la police d'écriture
