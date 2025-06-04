@@ -7,7 +7,7 @@
       <article
         v-for="(projet, index) in projets"
         :key="projet.id"
-        class="relative flex flex-col lg:max-w-[800px] lg:max-h-[530px] items-center gap-10 pt-10 flex-wrap"
+        class="relative flex flex-col lg:max-w-[800px] lg:max-h-[560px] xl:max-h-full items-center gap-10 pt-10 flex-wrap"
       >
         <!-- Séparateur vertical (droite), uniquement pour colonne 1 et 2 -->
         <div
