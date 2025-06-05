@@ -32,6 +32,8 @@ export default defineNuxtConfig({
     },
   },
 
+  plugins: ['~/plugins/lenis.client.ts'],
+
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image'],
   googleFonts: {

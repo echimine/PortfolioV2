@@ -4,7 +4,9 @@
     v-if="projets && projets.length > 0"
     class="flex justify-center md:justify-start"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-14">
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 md:pt-10 gap-x-14"
+    >
       <article
         v-for="(projet, index) in projets"
         :key="projet.id"
