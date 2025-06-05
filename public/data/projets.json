@@ -150,7 +150,7 @@
       "title": "À TABLE !",
       "date": "Décembre/2024",
       "text": "Dans le cadre de mon apprentissage de <span>Vue.js</span>, j’ai réalisé un projet de site de recettes nommé À Table !. Ce projet repose sur <span>l’API Spoonacular</span>, que j’ai intégrée au <span>store</span> pour centraliser la gestion des données. Les principales fonctionnalités sont <span>l'ajout aux favoris</span> avec la possibilité de sauvegarder des recettes pour un accès rapide. Puis une <span>liste de courses interactive</span> où les utilisateurs peuvent sélectionner des ingrédients directement depuis une recette pour générer une liste de courses. Affichage des <span>détails des recettes</span> . Le site est <span>responsive mobile-first</span> . Cette expérience m’a permis d’améliorer mes compétences en Vue.js avec l’Option API, avec un store personnalisé, utilisation du router, et en interaction avec une API externe.",
-      "description": "Site internet de recettes de cuisine",
+      "description": "Site internet de recettes de cuisine ",
       "image": "images/projets/atable/a-table.png",
       "images": [
         {

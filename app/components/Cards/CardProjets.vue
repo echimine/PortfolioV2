@@ -1,14 +1,14 @@
 <!-- components/GridProjets.vue -->
 <template>
   <section
-    v-if="projets && projets.length > 0"
+    v-if="projetsAfficher && projetsAfficher.length > 0"
     class="flex justify-center md:justify-start"
   >
     <div
       class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 md:pt-10 gap-x-14"
     >
       <article
-        v-for="(projet, index) in projets"
+        v-for="(projet, index) in projetsAfficher"
         :key="projet.id"
         class="relative flex flex-col lg:max-w-[800px] lg:max-h-[560px] xl:max-h-full items-center gap-10 pt-10 flex-wrap"
       >
@@ -39,9 +39,9 @@
 
           <div>
             <NuxtLink :to="`/projet/${projet.id}`">
-              <ButtonsCTAButtons type="button"
-                >Voir le projet</ButtonsCTAButtons
-              >
+              <ButtonsCTAButtons type="button">
+                Voir le projet
+              </ButtonsCTAButtons>
             </NuxtLink>
           </div>
         </div>
@@ -62,9 +62,10 @@ import { ref, onMounted, onUnmounted, computed } from 'vue';
 
 const props = defineProps<{
   projets: Projet[];
+  home?: boolean;
 }>();
 
-// Détection taille écran pour adapter le nombre de colonnes
+// Responsive : détection de la taille de l’écran
 const windowWidth = ref(0);
 function updateWidth() {
   windowWidth.value = window.innerWidth;
@@ -77,17 +78,21 @@ onUnmounted(() => {
   window.removeEventListener('resize', updateWidth);
 });
 
-// Calcul du nombre de colonnes visibles
+// Déterminer combien de colonnes sont visibles
 const getColumnCount = computed(() => {
-  if (windowWidth.value >= 1536) return 3; // 2xl
-  if (windowWidth.value >= 1024) return 2; // lg
+  if (windowWidth.value >= 1536) return 3;
+  if (windowWidth.value >= 1024) return 2;
   return 1;
 });
 
-// Affichage conditionnel des séparateurs verticaux
+// Affiche un séparateur sauf pour la dernière colonne
 function shouldShowSeparator(index: number) {
   const columns = getColumnCount.value;
-  // Ne pas afficher la ligne sur la dernière colonne
   return columns > 1 && index % columns !== columns - 1;
 }
+
+// Afficher seulement 3 projets en home
+const projetsAfficher = computed(() =>
+  props.home ? props.projets.slice(0, 3) : props.projets
+);
 </script>

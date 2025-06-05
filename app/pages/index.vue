@@ -1,7 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { Projet } from '@/type/projet.type';
+
+const projets = ref<Projet[]>([]);
+
+onMounted(async () => {
+  const response = await fetch('/data/projets.json');
+  const data = await response.json();
+  projets.value = data.projets;
+});
+</script>
 <template>
   <section
-    class="w-full h-[calc(100vh-100px)] flex items-end gap-10 flex-wrap py-10"
+    class="w-full h-[calc(100dvh-100px)] flex flex-wrap items-center justify-center gap-10 md:gap-10 min-[1537px]:gap-40 py-10"
   >
     <div class="flex flex-col gap-4">
       <Typographie size="bodyxl">Eliott CHIMINELLO - ECHIMINE</Typographie>
@@ -11,15 +21,62 @@
         >
         <Typographie size="h1" as="h1" class="leading-none">WEB</Typographie>
       </div>
+      <div class="md:flex md:justify-end hidden gap-6">
+        <ButtonsCTAButtons href="#a-propos">Explorer</ButtonsCTAButtons>
+        <ButtonsCTAButtons href="/images/CV_Eliott_CHIMINELLO.pdf"
+          >Mon CV</ButtonsCTAButtons
+        >
+      </div>
     </div>
-    <div class="">
+    <div class="max-w-[400px] max-h-[80vh]">
       <img
-        class="rounded-2xl max-w-[500px]"
+        class="rounded-2xl min-w-[300px]: max-w[500px] object-contain"
         src="public/images/image-eliott.png"
         alt=""
       />
     </div>
-  </section>
 
-  <section class="h-screen"></section>
+    <div class="md:hidden flex gap-6">
+      <ButtonsCTAButtons href="#a-propos">Explorer</ButtonsCTAButtons>
+      <ButtonsCTAButtons href="/images/CV_Eliott_CHIMINELLO.pdf"
+        >Mon CV</ButtonsCTAButtons
+      >
+    </div>
+  </section>
+  <Separator home id="a-propos" />
+  <section>
+    <Typographie size="h2" as="h2">MOI PAR MOI</Typographie>
+
+    <div
+      class="flex flex-col md:flex-row items-start justify-center md:justify-between md:gap-10 flex-wrap"
+    >
+      <img
+        class="md:max-w-[100%] py-10 md:py-0 md:pt-10"
+        src="public/images/projets/echimine/home_echimine.png"
+        alt=""
+      />
+      <Typographie size="bodyxl" class="text-justify md:w-3/4"
+        >Moi c'est Eliott, avant de coder je faisais des edits en gros du
+        montage vidéo, que je postais ensuite sur mes réseaux sociaux. J'ai
+        commencé à avoir une communauté. pour la développer encore plus ma
+        communauté j'ai alors utiliser un thème wordpress sur mon site car je
+        n'avais pas les compétences pour le faire moi même. Tout a commencé avec
+        ce site
+        <NuxtLink
+          to="https://www.echimine.fr/"
+          class="dark:text-orange text-blue hover:underline"
+        >
+          echimine.fr</NuxtLink
+        >. C'est ce projet qui m'a donné envie de poursuivre mes études dans le
+        développement web.
+      </Typographie>
+    </div>
+  </section>
+  <Separator home />
+  <section class="h-full py-5">
+    <Typographie size="h2" as="h2">MES DERNIERS PROJETS</Typographie>
+    <CardsCardProjets :projets="projets" home />
+  </section>
 </template>
+
+<style scoped></style>
