@@ -1,9 +1,11 @@
 <template>
   <footer class="h-full w-full py-10">
     <div
-      class="flex md:justify-between md:items-end p-10 border-2 border-blue dark:border-orange rounded-2xl flex-wrap"
+      class="flex md:justify-between md:items-end p-10 gap-8 md:gap-10 border-2 border-blue dark:border-orange rounded-2xl flex-wrap"
     >
-      <div class="flex gap-8 items-end flex-wrap">
+      <div
+        class="flex justify-center md:justify-start gap-8 items-end flex-wrap"
+      >
         <img
           class="w-[200px] lg:w-[300px] rounded-lg"
           src="public/images/image-eliott.png"
@@ -20,7 +22,7 @@
       </div>
 
       <div class="flex flex-col items-center md:items-end gap-8 pb-8">
-        <ul class="flex gap-4 justify-end">
+        <ul class="flex gap-4 justify-center md:justify-end">
           <li>
             <NuxtLink to="/projets" :class="getLinkClass('/projets')"
               ><Typographie size="bodyxl">Projet</Typographie></NuxtLink
@@ -43,7 +45,7 @@
           <li><CardsCardSocialNetwork img="mail" /></li>
           <li><CardsCardSocialNetwork img="mail" /></li>
         </ul>
-        <div class="pl-8">
+        <div class="md:pl-8">
           <Typographie> © {{ currentYear }} Tous droits réservés</Typographie>
         </div>
       </div>

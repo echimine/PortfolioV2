@@ -6,9 +6,19 @@
     </Typographie>
     <Separator />
     <client-only>
-      <CardsCardProjets />
+      <CardsCardProjets :projets="projets" />
     </client-only>
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { Projet } from '@/type/projet.type';
+
+const projets = ref<Projet[]>([]);
+
+onMounted(async () => {
+  const response = await fetch('/data/projets.json');
+  const data = await response.json();
+  projets.value = data.projets;
+});
+</script>
