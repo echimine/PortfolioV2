@@ -12,7 +12,6 @@
         :key="projet.id"
         class="relative flex flex-col lg:max-w-[800px] lg:max-h-[560px] xl:max-h-full items-center gap-10 pt-10 flex-wrap"
       >
-        <!-- Séparateur vertical dynamique -->
         <div
           v-if="shouldShowSeparator(index)"
           class="absolute top-0 right-[-28px] h-full w-[1px] bg-black dark:bg-white hidden lg:block"

@@ -45,37 +45,52 @@ onMounted(async () => {
   </section>
   <Separator home id="a-propos" />
   <section>
-    <Typographie size="h2" as="h2">MOI PAR MOI</Typographie>
+    <Typographie size="h2" as="h2">MON HSITOIRE</Typographie>
 
     <div
-      class="flex flex-col md:flex-row items-start justify-center md:justify-between md:gap-10 flex-wrap"
+      class="flex flex-col md:flex-row items-start justify-center md:justify-between md:gap-10 md:pt-10 flex-wrap"
     >
       <img
-        class="md:max-w-[100%] py-10 md:py-0 md:pt-10"
+        class="py-10 md:py-0 rounded-2xl"
         src="public/images/projets/echimine/home_echimine.png"
         alt=""
       />
-      <Typographie size="bodyxl" class="text-justify md:w-3/4"
-        >Moi c'est Eliott, avant de coder je faisais des edits en gros du
-        montage vidéo, que je postais ensuite sur mes réseaux sociaux. J'ai
-        commencé à avoir une communauté. pour la développer encore plus ma
-        communauté j'ai alors utiliser un thème wordpress sur mon site car je
-        n'avais pas les compétences pour le faire moi même. Tout a commencé avec
-        ce site
-        <NuxtLink
-          to="https://www.echimine.fr/"
-          class="dark:text-orange text-blue hover:underline"
-        >
-          echimine.fr</NuxtLink
-        >. C'est ce projet qui m'a donné envie de poursuivre mes études dans le
-        développement web.
-      </Typographie>
+
+      <div class="flex flex-col gap-6">
+        <Typographie size="bodyxl" class="text-justify md:w-3/4"
+          >Moi c'est Eliott, avant de coder je faisais des edits en gros du
+          montage vidéo, que je postais ensuite sur mes réseaux sociaux. J'ai
+          commencé à avoir une communauté. pour la développer encore plus ma
+          communauté j'ai alors utiliser un thème wordpress sur mon site car je
+          n'avais pas les compétences pour le faire moi même. Tout a commencé
+          avec ce site
+          <NuxtLink
+            to="https://www.echimine.fr/"
+            class="dark:text-orange text-blue hover:underline"
+          >
+            echimine.fr</NuxtLink
+          >. C'est ce projet qui m'a donné envie de poursuivre mes études dans
+          le développement web.
+        </Typographie>
+
+        <ButtonsCTAButtons class="md:w-[300px] w-full" href="a-propos"
+          >Me décrouvrir encore plus +
+        </ButtonsCTAButtons>
+      </div>
     </div>
   </section>
   <Separator home />
   <section class="h-full py-5">
     <Typographie size="h2" as="h2">MES DERNIERS PROJETS</Typographie>
-    <CardsCardProjets :projets="projets" home />
+    <div class="pt-4 flex flex-wrap justify-between gap-4">
+      <Typographie size="bodyxl" as="p"
+        >Découvrer mes autres projets là-bas
+      </Typographie>
+      <ButtonsCTAButtons class="md:w-[300px] w-full" href="projets"
+        >Voir tous mes projets
+      </ButtonsCTAButtons>
+    </div>
+    <client-only> <CardsCardProjets :projets="projets" home /></client-only>
   </section>
 </template>
 

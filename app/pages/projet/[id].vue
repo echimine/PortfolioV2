@@ -7,13 +7,13 @@
   <!-- Si le projet n'existe pas après le chargement -->
   <div
     v-else-if="!projet"
-    class="flex justify-center items-center min-h-screen " 
+    class="flex justify-center items-center min-h-screen"
   >
     <Typographie size="h1" as="h1">Projet non trouvé</Typographie>
   </div>
   <section v-else>
     <div class="mb-10 py-16">
-      <div class="flex flex-wrap items-center justify-between">
+      <div class="flex flex-wrap items-center justify-between gap-4">
         <Typographie size="h1" as="h1">{{ projet.title }}</Typographie>
         <Typographie size="h4" weight="medium" as="h4" class="opacity-45">
           {{ projet.date }}
@@ -38,7 +38,7 @@
             </Typographie>
           </div>
         </div>
-        <Separator />
+        <Separator projet />
         <div class="flex justify-between flex-wrap">
           <div><Typographie>Compétences</Typographie></div>
           <div class="flex gap-2 flex-wrap">
@@ -50,7 +50,7 @@
             </Typographie>
           </div>
         </div>
-        <Separator />
+        <Separator projet />
         <div class="flex justify-between flex-wrap">
           <div><Typographie>Visiter</Typographie></div>
           <div class="flex gap-2">
