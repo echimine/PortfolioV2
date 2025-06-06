@@ -2,7 +2,7 @@
   "projets": [
     {
       "id": 1,
-      "title": "Holosphère",
+      "title": "Holosphere",
       "date": "Avril/2025",
       "text": "Nous avons conçu une expérience interactive et émotionnelle autour de Holosphere, un objet connecté qui projette des souvenirs en hologramme au cœur d’une sphère. L’objectif : permettre aux utilisateurs de revivre leurs moments les plus précieux comme s’ils y étaient, en alliant technologie, design et partage familial.",
       "description": "site E-commerce avce l'utilisation de threeJS",

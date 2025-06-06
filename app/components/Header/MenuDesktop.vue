@@ -5,7 +5,7 @@
     </NuxtLink>
 
     <NuxtLink to="/a-propos" :class="getLinkClass('/a-propos')">
-      <Typographie size="bodyxl"> A propos</Typographie>
+      <Typographie size="bodyxl">A propos</Typographie>
     </NuxtLink>
 
     <NuxtLink to="/contact" :class="getLinkClass('/contact')">

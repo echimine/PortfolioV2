@@ -45,7 +45,7 @@ onMounted(async () => {
   </section>
   <Separator home id="a-propos" />
   <section>
-    <Typographie size="h2" as="h2">MON HSITOIRE</Typographie>
+    <Typographie size="h2" as="h2">MON HISTOIRE</Typographie>
 
     <div
       class="flex flex-col md:flex-row items-start justify-center md:justify-between md:gap-10 md:pt-10 flex-wrap"
@@ -53,24 +53,24 @@ onMounted(async () => {
       <img
         class="py-10 md:py-0 rounded-2xl"
         src="public/images/projets/echimine/home_echimine.png"
-        alt=""
+        alt="rubrique starwars du site chimine.fr"
       />
 
       <div class="flex flex-col gap-6">
         <Typographie size="bodyxl" class="text-justify md:w-3/4"
-          >Moi c'est Eliott, avant de coder je faisais des edits en gros du
-          montage vidéo, que je postais ensuite sur mes réseaux sociaux. J'ai
-          commencé à avoir une communauté. pour la développer encore plus ma
-          communauté j'ai alors utiliser un thème wordpress sur mon site car je
-          n'avais pas les compétences pour le faire moi même. Tout a commencé
-          avec ce site
+          >Moi c’est Eliott. Avant de me lancer dans le code, je faisais du
+          montage vidéo, des edits que je partageais sur mes réseaux sociaux.
+          Petit à petit, j’ai commencé à créer une communauté autour de ces
+          contenus. Pour aller plus loin et la faire grandir, j’ai décidé de
+          créer un site web. Ne maîtrisant pas encore le développement, j’ai
+          utilisé un thème WordPress. C’est à ce moment-là que tout a commencé :
           <NuxtLink
             to="https://www.echimine.fr/"
             class="dark:text-orange text-blue hover:underline"
           >
             echimine.fr</NuxtLink
-          >. C'est ce projet qui m'a donné envie de poursuivre mes études dans
-          le développement web.
+          >
+          ce site a été le point de départ de mon envie d’apprendre à coder.
         </Typographie>
 
         <ButtonsCTAButtons class="md:w-[300px] w-full" href="a-propos"
@@ -82,15 +82,23 @@ onMounted(async () => {
   <Separator home />
   <section class="h-full py-5">
     <Typographie size="h2" as="h2">MES DERNIERS PROJETS</Typographie>
-    <div class="pt-4 flex flex-wrap justify-between gap-4">
+    <div class="pt-4 md:flex flex-wrap justify-between gap-4 hidden">
       <Typographie size="bodyxl" as="p"
         >Découvrer mes autres projets là-bas
       </Typographie>
-      <ButtonsCTAButtons class="md:w-[300px] w-full" href="projets"
-        >Voir tous mes projets
+      <ButtonsCTAButtons plein class="md:w-[300px] w-full" href="projets"
+        >Découvrir tous mes projets
       </ButtonsCTAButtons>
     </div>
     <client-only> <CardsCardProjets :projets="projets" home /></client-only>
+    <div class="pt-4 flex flex-wrap justify-between gap-4 md:hidden">
+      <Typographie size="bodyxl" as="p"
+        >Découvrer mes autres projets là-bas
+      </Typographie>
+      <ButtonsCTAButtons plein class="md:w-[300px] w-full" href="projets"
+        >Découvrir tous mes projets
+      </ButtonsCTAButtons>
+    </div>
   </section>
 </template>
 
