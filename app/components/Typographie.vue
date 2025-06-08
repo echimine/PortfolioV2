@@ -52,7 +52,7 @@ const sizeClasses: Record<Size, string> = {
   h2: 'text-[clamp(2rem,6vw,3.125rem)]', // ~32px à 50px
   h3: 'text-[clamp(1.25rem,4vw,2rem)]', // ~20px à 32px
   h4: 'text-[clamp(1.125rem,2.5vw,1.5rem)]', // ~18px à 24px
-  bodyxl: 'text-[clamp(1rem,2.5vw,1.25rem)]', // ~16px à 20px
+  bodyxl: 'text-[clamp(1.125rem,2.5vw,1.25rem)]', // ~16px à 20px
   bodybase: 'text-[clamp(0.875rem,2vw,1rem)]', // ~14px à 16px
   footer: 'text-[clamp(2.625rem,10vw,6rem)]', // même que h1
 };

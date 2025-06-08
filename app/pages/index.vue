@@ -74,7 +74,7 @@ onMounted(async () => {
         </Typographie>
 
         <ButtonsCTAButtons class="md:w-[300px] w-full" href="a-propos"
-          >Me décrouvrir encore plus +
+          >En savoir plus
         </ButtonsCTAButtons>
       </div>
     </div>
@@ -84,7 +84,7 @@ onMounted(async () => {
     <Typographie size="h2" as="h2">MES DERNIERS PROJETS</Typographie>
     <div class="pt-4 md:flex flex-wrap justify-between gap-4 hidden">
       <Typographie size="bodyxl" as="p"
-        >Découvrer mes autres projets là-bas
+        >Découvrer mes autres projets
       </Typographie>
       <ButtonsCTAButtons plein class="md:w-[300px] w-full" href="projets"
         >Découvrir tous mes projets
@@ -93,7 +93,7 @@ onMounted(async () => {
     <client-only> <CardsCardProjets :projets="projets" home /></client-only>
     <div class="pt-4 flex flex-wrap justify-between gap-4 md:hidden">
       <Typographie size="bodyxl" as="p"
-        >Découvrer mes autres projets là-bas
+        >Découvrer mes autres projets
       </Typographie>
       <ButtonsCTAButtons plein class="md:w-[300px] w-full" href="projets"
         >Découvrir tous mes projets
